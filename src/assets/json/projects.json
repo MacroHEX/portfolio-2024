@@ -8,19 +8,19 @@
       "stack": [
         {
           "name": "React",
-          "img": "/assets/img/react.svg"
+          "img": "/img/react.svg"
         },
         {
           "name": "Next.js",
-          "img": "/assets/img/next.svg"
+          "img": "/img/next.svg"
         },
         {
           "name": "Typescript",
-          "img": "/assets/img/typescript.svg"
+          "img": "/img/typescript.svg"
         },
         {
           "name": "CSS",
-          "img": "/assets/img/css.svg"
+          "img": "/img/css.svg"
         }
       ]
     },
@@ -32,31 +32,31 @@
       "stack": [
         {
           "name": "React",
-          "img": "/assets/img/react.svg"
+          "img": "/img/react.svg"
         },
         {
           "name": "Next.js",
-          "img": "/assets/img/next.svg"
+          "img": "/img/next.svg"
         },
         {
           "name": "Apollo GraphQL",
-          "img": "/assets/img/apollo.svg"
+          "img": "/img/apollo.svg"
         },
         {
           "name": "GraphQL",
-          "img": "/assets/img/graphql.svg"
+          "img": "/img/graphql.svg"
         },
         {
           "name": "Tailwind CSS",
-          "img": "/assets/img/tailwind.svg"
+          "img": "/img/tailwind.svg"
         },
         {
           "name": "Typescript",
-          "img": "/assets/img/typescript.svg"
+          "img": "/img/typescript.svg"
         },
         {
           "name": "OpenAi",
-          "img": "/assets/img/openai.svg"
+          "img": "/img/openai.svg"
         }
       ]
     },
@@ -68,7 +68,7 @@
       "stack": [
         {
           "name": "Hugo",
-          "img": "/assets/img/hugo.png"
+          "img": "/img/hugo.png"
         }
       ]
     },
@@ -80,23 +80,23 @@
       "stack": [
         {
           "name": "Angular",
-          "img": "/assets/img/angular.svg"
+          "img": "/img/angular.svg"
         },
         {
           "name": "Material UI",
-          "img": "/assets/img/material.svg"
+          "img": "/img/material.svg"
         },
         {
           "name": "Typescript",
-          "img": "/assets/img/typescript.svg"
+          "img": "/img/typescript.svg"
         },
         {
           "name": "Java",
-          "img": "/assets/img/java.svg"
+          "img": "/img/java.svg"
         },
         {
           "name": "Spring Boot",
-          "img": "/assets/img/spring.svg"
+          "img": "/img/spring.svg"
         }
       ]
     },
@@ -108,23 +108,23 @@
       "stack": [
         {
           "name": "React",
-          "img": "/assets/img/react.svg"
+          "img": "/img/react.svg"
         },
         {
           "name": "Tailwind CSS",
-          "img": "/assets/img/tailwind.svg"
+          "img": "/img/tailwind.svg"
         },
         {
           "name": "Typescript",
-          "img": "/assets/img/typescript.svg"
+          "img": "/img/typescript.svg"
         },
         {
           "name": "Go",
-          "img": "/assets/img/go.svg"
+          "img": "/img/go.svg"
         },
         {
           "name": "PostgreSQL",
-          "img": "/assets/img/postgresql.svg"
+          "img": "/img/postgresql.svg"
         }
       ]
     },
@@ -136,27 +136,27 @@
       "stack": [
         {
           "name": "HTML",
-          "img": "/assets/img/html.svg"
+          "img": "/img/html.svg"
         },
         {
           "name": "CSS",
-          "img": "/assets/img/css.svg"
+          "img": "/img/css.svg"
         },
         {
           "name": "Bootstrap",
-          "img": "/assets/img/bootstrap.svg"
+          "img": "/img/bootstrap.svg"
         },
         {
           "name": "JQuery",
-          "img": "/assets/img/jquery.svg"
+          "img": "/img/jquery.svg"
         },
         {
           "name": "Java",
-          "img": "/assets/img/java.svg"
+          "img": "/img/java.svg"
         },
         {
           "name": "MySQL",
-          "img": "/assets/img/mysql.svg"
+          "img": "/img/mysql.svg"
         }
       ]
     },
@@ -168,27 +168,27 @@
       "stack": [
         {
           "name": "React",
-          "img": "/assets/img/react.svg"
+          "img": "/img/react.svg"
         },
         {
           "name": "Tailwind CSS",
-          "img": "/assets/img/tailwind.svg"
+          "img": "/img/tailwind.svg"
         },
         {
           "name": "Typescript",
-          "img": "/assets/img/typescript.svg"
+          "img": "/img/typescript.svg"
         },
         {
           "name": "Java",
-          "img": "/assets/img/java.svg"
+          "img": "/img/java.svg"
         },
         {
           "name": "Spring Boot",
-          "img": "/assets/img/spring.svg"
+          "img": "/img/spring.svg"
         },
         {
           "name": "MySQL",
-          "img": "/assets/img/mysql.svg"
+          "img": "/img/mysql.svg"
         }
       ]
     },
@@ -200,15 +200,15 @@
       "stack": [
         {
           "name": "Java",
-          "img": "/assets/img/java.svg"
+          "img": "/img/java.svg"
         },
         {
           "name": "Spring Boot",
-          "img": "/assets/img/spring.svg"
+          "img": "/img/spring.svg"
         },
         {
           "name": "MySQL",
-          "img": "/assets/img/mysql.svg"
+          "img": "/img/mysql.svg"
         }
       ]
     },
@@ -220,23 +220,23 @@
       "stack": [
         {
           "name": "Java",
-          "img": "/assets/img/java.svg"
+          "img": "/img/java.svg"
         },
         {
           "name": "Spring Boot",
-          "img": "/assets/img/spring.svg"
+          "img": "/img/spring.svg"
         },
         {
           "name": "MySQL",
-          "img": "/assets/img/mysql.svg"
+          "img": "/img/mysql.svg"
         },
         {
           "name": "Meta API",
-          "img": "/assets/img/meta.svg"
+          "img": "/img/meta.svg"
         },
         {
           "name": "WhatsApp",
-          "img": "/assets/img/whatsapp.svg"
+          "img": "/img/whatsapp.svg"
         }
       ]
     }
