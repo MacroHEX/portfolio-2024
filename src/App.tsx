@@ -118,21 +118,17 @@ function App() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project) => (
                 <Card key={project.id}>
-                  <CardContent className="p-6">
+                  <CardContent className="p-6 flex flex-col h-full">
                     <h3 className="text-xl font-bold mb-2">{project.name}</h3>
-                    <p className="text-gray-500 dark:text-gray-400 mb-4 h-24">{project.description}</p>
-
-                    {/* Tal vez eliminar IDK (＃°Д°) */}
-                    {/*<h4 className="font-bold mb-2 text-center">Stack</h4>*/}
+                    <p className="text-gray-500 dark:text-gray-400 mb-4 flex-grow">{project.description}</p>
 
                     <div className='flex justify-center items-center flex-wrap gap-4 mb-4'>
                       {project.stack && project.stack.map(stack =>
                         <TooltipProvider key={stack.name}>
                           <Tooltip>
                             <TooltipTrigger>
-                              <img className='h-7 w-auto grayscale-0  md:grayscale md:hover:grayscale-0'
-                                   key={stack.name}
-                                   src={stack.img} alt={stack.name}/>
+                              <img className='h-7 w-auto grayscale-0 md:grayscale md:hover:grayscale-0'
+                                   src={stack.img} alt={stack.name} />
                             </TooltipTrigger>
                             <TooltipContent>
                               <p>{stack.name}</p>
@@ -142,17 +138,18 @@ function App() {
                       )}
                     </div>
 
-                    {project.url ?
+                    {project.url && (
                       <Button
                         variant="outline"
-                        className="w-full"
+                        className="w-full mt-auto"
                         onClick={() => window.open(project.url, '_blank')}
                         rel="noopener noreferrer"
                       >
                         Ver Sitio
-                      </Button> : null}
-
+                      </Button>
+                    )}
                   </CardContent>
+
                 </Card>
               ))}
             </div>
