@@ -1,0 +1,244 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Pokedex",
+      "description": "Proyecto de Prueba API",
+      "url": "https://pokedex-api-nu.vercel.app",
+      "stack": [
+        {
+          "name": "React",
+          "img": "../src/assets/img/react.svg"
+        },
+        {
+          "name": "Next.js",
+          "img": "../src/assets/img/next.svg"
+        },
+        {
+          "name": "Typescript",
+          "img": "../src/assets/img/typescript.svg"
+        },
+        {
+          "name": "CSS",
+          "img": "../src/assets/img/css.svg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Weather AI",
+      "description": "App que genera reportes del clima utilizando API de clima y OpenAi para generar el resumen.",
+      "url": "https://weather-ai-psi.vercel.app",
+      "stack": [
+        {
+          "name": "React",
+          "img": "../src/assets/img/react.svg"
+        },
+        {
+          "name": "Next.js",
+          "img": "../src/assets/img/next.svg"
+        },
+        {
+          "name": "Apollo GraphQL",
+          "img": "../src/assets/img/apollo.svg"
+        },
+        {
+          "name": "GraphQL",
+          "img": "../src/assets/img/graphql.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "img": "../src/assets/img/tailwind.svg"
+        },
+        {
+          "name": "Typescript",
+          "img": "../src/assets/img/typescript.svg"
+        },
+        {
+          "name": "OpenAi",
+          "img": "../src/assets/img/openai.svg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Documentación",
+      "description": "Documentación personal",
+      "url": "https://macrohex.pages.dev",
+      "stack": [
+        {
+          "name": "Hugo",
+          "img": "../src/assets/img/hugo.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dashboard para Empresa de Seguros y Reaseguro",
+      "description": "Migración de un sistema de escritorio a uno web utilizando Angular y SpringBoot Framework",
+      "url": "",
+      "stack": [
+        {
+          "name": "Angular",
+          "img": "../src/assets/img/angular.svg"
+        },
+        {
+          "name": "Material UI",
+          "img": "../src/assets/img/material.svg"
+        },
+        {
+          "name": "Typescript",
+          "img": "../src/assets/img/typescript.svg"
+        },
+        {
+          "name": "Java",
+          "img": "../src/assets/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "../src/assets/img/spring.svg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Delpi",
+      "description": "API centralizada y estandarizada que ofrece información sobre los departamentos, ciudades y barrios de Paraguay, diseñada para ser utilizada por otros desarrolladores.",
+      "url": "https://delpi.dev",
+      "stack": [
+        {
+          "name": "React",
+          "img": "../src/assets/img/react.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "img": "../src/assets/img/tailwind.svg"
+        },
+        {
+          "name": "Typescript",
+          "img": "../src/assets/img/typescript.svg"
+        },
+        {
+          "name": "Go",
+          "img": "../src/assets/img/go.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "img": "../src/assets/img/postgresql.svg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Mantenimiento Sistemas Internos",
+      "description": "Mantenimiento y actualización de sistemas legacy",
+      "url": "",
+      "stack": [
+        {
+          "name": "HTML",
+          "img": "../src/assets/img/html.svg"
+        },
+        {
+          "name": "CSS",
+          "img": "../src/assets/img/css.svg"
+        },
+        {
+          "name": "Bootstrap",
+          "img": "../src/assets/img/bootstrap.svg"
+        },
+        {
+          "name": "JQuery",
+          "img": "../src/assets/img/jquery.svg"
+        },
+        {
+          "name": "Java",
+          "img": "../src/assets/img/java.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "../src/assets/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Sistema de Tickets",
+      "description": "Sistema de tickets para solicitudes internas",
+      "url": "",
+      "stack": [
+        {
+          "name": "React",
+          "img": "../src/assets/img/react.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "img": "../src/assets/img/tailwind.svg"
+        },
+        {
+          "name": "Typescript",
+          "img": "../src/assets/img/typescript.svg"
+        },
+        {
+          "name": "Java",
+          "img": "../src/assets/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "../src/assets/img/spring.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "../src/assets/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Facturación Electrónica",
+      "description": "Integración con el sistema de SIFEN para la facturación electrónica",
+      "url": "",
+      "stack": [
+        {
+          "name": "Java",
+          "img": "../src/assets/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "../src/assets/img/spring.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "../src/assets/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Bot de WhatsApp",
+      "description": "Bot de atención al usuario utilizando la API de META",
+      "url": "",
+      "stack": [
+        {
+          "name": "Java",
+          "img": "../src/assets/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "../src/assets/img/spring.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "../src/assets/img/mysql.svg"
+        },
+        {
+          "name": "Meta API",
+          "img": "../src/assets/img/meta.svg"
+        },
+        {
+          "name": "WhatsApp",
+          "img": "../src/assets/img/whatsapp.svg"
+        }
+      ]
+    }
+  ]
+}

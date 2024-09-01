@@ -1,0 +1,25 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "company": "Maxicambios S.A.",
+      "position": "Fullstack Developer",
+      "duration": "2023 - Presente",
+      "description": "Desarrollé habilidades en programación web y sistemas operativos, así como en la implementación de aplicaciones móviles y web."
+    },
+    {
+      "id": 2,
+      "company": "CLT S.A.",
+      "position": "Frontend Developer",
+      "duration": "2022 - 2023",
+      "description": "Participe en el mantenimiento de aplicaciones en Next.js y el desarrollo de nuevas aplicaciones en Angular, desarrollando interfaces amigables con el usuario."
+    },
+    {
+      "id": 3,
+      "company": "Cabal Paraguay Ltda",
+      "position": "Help Desk",
+      "duration": "2021 - 2022",
+      "description": "Participe en la integración con el BCP y mantenimiento de los equipos informáticos"
+    }
+  ]
+}

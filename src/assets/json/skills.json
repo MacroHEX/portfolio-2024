@@ -1,0 +1,44 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "JavaScript",
+      "type": "Frontend"
+    },
+    {
+      "id": 2,
+      "name": "TypeScript",
+      "type": "Frontend"
+    },
+    {
+      "id": 3,
+      "name": "React",
+      "type": "Frontend"
+    },
+    {
+      "id": 4,
+      "name": "Angular",
+      "type": "Frontend"
+    },
+    {
+      "id": 5,
+      "name": "Java",
+      "type": "Backend"
+    },
+    {
+      "id": 6,
+      "name": "Go",
+      "type": "Backend"
+    },
+    {
+      "id": 7,
+      "name": "PostgreSQL",
+      "type": "Database"
+    },
+    {
+      "id": 8,
+      "name": "MySQL",
+      "type": "Database"
+    }
+  ]
+}
