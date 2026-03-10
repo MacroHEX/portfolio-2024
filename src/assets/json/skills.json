@@ -22,23 +22,83 @@
     },
     {
       "id": 5,
+      "name": "Next.js",
+      "type": "Frontend"
+    },
+    {
+      "id": 6,
       "name": "Java",
       "type": "Backend"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Go",
       "type": "Backend"
     },
     {
-      "id": 7,
+      "id": 8,
+      "name": "Spring Boot",
+      "type": "Backend"
+    },
+    {
+      "id": 9,
       "name": "PostgreSQL",
       "type": "Database"
     },
     {
-      "id": 8,
+      "id": 10,
       "name": "MySQL",
       "type": "Database"
+    },
+    {
+      "id": 11,
+      "name": "Claude",
+      "type": "AI Tools"
+    },
+    {
+      "id": 12,
+      "name": "Gemini",
+      "type": "AI Tools"
+    },
+    {
+      "id": 13,
+      "name": "Kimi",
+      "type": "AI Tools"
+    },
+    {
+      "id": 14,
+      "name": "IntelliJ IDEA",
+      "type": "JetBrains"
+    },
+    {
+      "id": 15,
+      "name": "WebStorm",
+      "type": "JetBrains"
+    },
+    {
+      "id": 16,
+      "name": "DataGrip",
+      "type": "JetBrains"
+    },
+    {
+      "id": 17,
+      "name": "PhpStorm",
+      "type": "JetBrains"
+    },
+    {
+      "id": 18,
+      "name": "Rider",
+      "type": "JetBrains"
+    },
+    {
+      "id": 19,
+      "name": "GoLand",
+      "type": "JetBrains"
+    },
+    {
+      "id": 20,
+      "name": "PyCharm",
+      "type": "JetBrains"
     }
   ]
 }
