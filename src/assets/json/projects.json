@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Pokedex",
-      "description": "Proyecto de Prueba API",
+      "description": "Proyecto de prueba consumiendo la PokéAPI con visualización de datos e interfaz responsiva.",
       "url": "https://pokedex-api-nu.vercel.app",
       "stack": [
         {
@@ -15,7 +15,7 @@
           "img": "/img/next.svg"
         },
         {
-          "name": "Typescript",
+          "name": "TypeScript",
           "img": "/img/typescript.svg"
         },
         {
@@ -27,7 +27,7 @@
     {
       "id": 2,
       "name": "Weather AI",
-      "description": "App que genera reportes del clima utilizando API de clima y OpenAi para generar el resumen.",
+      "description": "App que genera reportes del clima combinando una API meteorológica con OpenAI para redactar resúmenes en lenguaje natural.",
       "url": "https://weather-ai-psi.vercel.app",
       "stack": [
         {
@@ -51,11 +51,11 @@
           "img": "/img/tailwind.svg"
         },
         {
-          "name": "Typescript",
+          "name": "TypeScript",
           "img": "/img/typescript.svg"
         },
         {
-          "name": "OpenAi",
+          "name": "OpenAI",
           "img": "/img/openai.svg"
         }
       ]
@@ -63,7 +63,7 @@
     {
       "id": 3,
       "name": "Documentación",
-      "description": "Documentación personal",
+      "description": "Sitio de documentación personal con notas técnicas, guías y referencias de desarrollo.",
       "url": "https://macrohex.pages.dev",
       "stack": [
         {
@@ -74,8 +74,8 @@
     },
     {
       "id": 4,
-      "name": "Dashboard para Empresa de Seguros y Reaseguro",
-      "description": "Migración de un sistema de escritorio a uno web utilizando Angular y SpringBoot Framework",
+      "name": "Dashboard — Empresa de Seguros",
+      "description": "Migración de sistema de escritorio a web para empresa de seguros y reaseguro, con gestión de pólizas, clientes y reportes.",
       "url": "",
       "stack": [
         {
@@ -87,7 +87,7 @@
           "img": "/img/material.svg"
         },
         {
-          "name": "Typescript",
+          "name": "TypeScript",
           "img": "/img/typescript.svg"
         },
         {
@@ -103,7 +103,7 @@
     {
       "id": 5,
       "name": "Delpi",
-      "description": "API centralizada y estandarizada que ofrece información sobre los departamentos, ciudades y barrios de Paraguay, diseñada para ser utilizada por otros desarrolladores.",
+      "description": "API pública y estandarizada con información de departamentos, ciudades y barrios de Paraguay. Disponible para uso por otros desarrolladores.",
       "url": "https://delpi.dev",
       "stack": [
         {
@@ -115,7 +115,7 @@
           "img": "/img/tailwind.svg"
         },
         {
-          "name": "Typescript",
+          "name": "TypeScript",
           "img": "/img/typescript.svg"
         },
         {
@@ -130,8 +130,160 @@
     },
     {
       "id": 6,
-      "name": "Mantenimiento Sistemas Internos",
-      "description": "Mantenimiento y actualización de sistemas legacy",
+      "name": "Integración — Plataforma de Envío de Fondos",
+      "description": "Integración con una plataforma externa de envío y recibo de dinero, habilitando el procesamiento de transacciones en tiempo real y la conciliación automática.",
+      "url": "",
+      "stack": [
+        {
+          "name": "React",
+          "img": "/img/react.svg"
+        },
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Bot Telegram — Autogestión de Cajeros",
+      "description": "Bot de Telegram para cajeros que permite el reseteo autónomo de contraseñas y el envío de comentarios e incidencias directamente al equipo de soporte.",
+      "url": "",
+      "stack": [
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        },
+        {
+          "name": "Telegram",
+          "img": "/img/telegram.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Bot Telegram — Monitoreo y Operaciones",
+      "description": "Bot de Telegram para el equipo de operaciones con alertas automáticas del sistema, control de modo mantenimiento de aplicaciones, bloqueo de accesos y actualización de listas de cumplimiento.",
+      "url": "",
+      "stack": [
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        },
+        {
+          "name": "Telegram",
+          "img": "/img/telegram.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Sistema de Tickets",
+      "description": "Sistema interno de tickets para gestión de solicitudes entre departamentos, con seguimiento de estado y prioridades.",
+      "url": "",
+      "stack": [
+        {
+          "name": "React",
+          "img": "/img/react.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "img": "/img/tailwind.svg"
+        },
+        {
+          "name": "TypeScript",
+          "img": "/img/typescript.svg"
+        },
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Facturación Electrónica",
+      "description": "Integración con SIFEN para la emisión de comprobantes electrónicos conforme a las normativas de la SET Paraguay.",
+      "url": "",
+      "stack": [
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Bot de WhatsApp",
+      "description": "Bot de atención al usuario utilizando la API de META para responder consultas frecuentes y derivar casos al equipo humano.",
+      "url": "",
+      "stack": [
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "/img/mysql.svg"
+        },
+        {
+          "name": "Meta API",
+          "img": "/img/meta.svg"
+        },
+        {
+          "name": "WhatsApp",
+          "img": "/img/whatsapp.svg"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Mantenimiento Sistemas Legacy",
+      "description": "Mantenimiento y actualización de sistemas legacy de la empresa, mejorando estabilidad y añadiendo nuevas funcionalidades.",
       "url": "",
       "stack": [
         {
@@ -157,86 +309,6 @@
         {
           "name": "MySQL",
           "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Sistema de Tickets",
-      "description": "Sistema de tickets para solicitudes internas",
-      "url": "",
-      "stack": [
-        {
-          "name": "React",
-          "img": "/img/react.svg"
-        },
-        {
-          "name": "Tailwind CSS",
-          "img": "/img/tailwind.svg"
-        },
-        {
-          "name": "Typescript",
-          "img": "/img/typescript.svg"
-        },
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Facturación Electrónica",
-      "description": "Integración con el sistema de SIFEN para la facturación electrónica",
-      "url": "",
-      "stack": [
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Bot de WhatsApp",
-      "description": "Bot de atención al usuario utilizando la API de META",
-      "url": "",
-      "stack": [
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        },
-        {
-          "name": "Meta API",
-          "img": "/img/meta.svg"
-        },
-        {
-          "name": "WhatsApp",
-          "img": "/img/whatsapp.svg"
         }
       ]
     }

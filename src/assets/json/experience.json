@@ -5,21 +5,28 @@
       "company": "Maxicambios S.A.",
       "position": "Fullstack Developer",
       "duration": "2023 - Presente",
-      "description": "Realizo mantenimiento a aplicaciones legacy asi como el desarrollo de nuevos modulos incluyendo sus documentaciones y manuales."
+      "description": "Desarrollo y mantenimiento de aplicaciones fullstack, incluyendo sistemas legacy y nuevos módulos con su documentación técnica. Integro herramientas de IA (Claude, Gemini, Kimi) para optimizar flujos de desarrollo, revisión de código y generación de documentación."
     },
     {
       "id": 2,
       "company": "CLT S.A.",
       "position": "Frontend Developer",
       "duration": "2022 - 2023",
-      "description": "Participe en el mantenimiento de aplicaciones en Next.js y el desarrollo de nuevas aplicaciones en Angular, desarrollando interfaces amigables con el usuario."
+      "description": "Mantenimiento de aplicaciones en Next.js y desarrollo de nuevas aplicaciones en Angular, construyendo interfaces de usuario accesibles y responsivas."
     },
     {
       "id": 3,
       "company": "Cabal Paraguay Ltda",
       "position": "Help Desk",
       "duration": "2021 - 2022",
-      "description": "Participe en la integración con el BCP y mantenimiento de los equipos informáticos"
+      "description": "Soporte técnico, integración con el BCP y mantenimiento de equipos informáticos."
+    },
+    {
+      "id": 4,
+      "company": "Parasur S.A.",
+      "position": "Pasante — Soporte Técnico",
+      "duration": "2014",
+      "description": "Instalación de cableados estructurados, montaje y configuración de cámaras de seguridad, y mantenimiento preventivo y correctivo de equipos informáticos."
     }
   ]
 }
