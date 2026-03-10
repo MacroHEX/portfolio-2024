@@ -4,29 +4,41 @@
       "id": 1,
       "company": "Maxicambios S.A.",
       "position": "Fullstack Developer",
+      "position_en": "Fullstack Developer",
       "duration": "2023 - Presente",
-      "description": "Desarrollo y mantenimiento de aplicaciones fullstack, incluyendo sistemas legacy y nuevos módulos con su documentación técnica. Integro herramientas de IA (Claude, Gemini, Kimi) para optimizar flujos de desarrollo, revisión de código y generación de documentación."
+      "duration_en": "2023 - Present",
+      "description": "Desarrollo y mantenimiento de aplicaciones fullstack, incluyendo sistemas legacy y nuevos módulos con su documentación técnica. Integro herramientas de IA (Claude, Gemini, Kimi) para optimizar flujos de desarrollo, revisión de código y generación de documentación.",
+      "description_en": "Development and maintenance of fullstack applications, including legacy systems and new modules with technical documentation. I integrate AI tools (Claude, Gemini, Kimi) to optimize development workflows, code review and documentation generation."
     },
     {
       "id": 2,
       "company": "CLT S.A.",
       "position": "Frontend Developer",
+      "position_en": "Frontend Developer",
       "duration": "2022 - 2023",
-      "description": "Mantenimiento de aplicaciones en Next.js y desarrollo de nuevas aplicaciones en Angular, construyendo interfaces de usuario accesibles y responsivas."
+      "duration_en": "2022 - 2023",
+      "description": "Mantenimiento de aplicaciones en Next.js y desarrollo de nuevas aplicaciones en Angular, construyendo interfaces de usuario accesibles y responsivas.",
+      "description_en": "Maintenance of Next.js applications and development of new Angular applications, building accessible and responsive user interfaces."
     },
     {
       "id": 3,
       "company": "Cabal Paraguay Ltda",
       "position": "Help Desk",
+      "position_en": "Help Desk",
       "duration": "2021 - 2022",
-      "description": "Soporte técnico, integración con el BCP y mantenimiento de equipos informáticos."
+      "duration_en": "2021 - 2022",
+      "description": "Soporte técnico, integración con el BCP y mantenimiento de equipos informáticos.",
+      "description_en": "Technical support, BCP integration and computer equipment maintenance."
     },
     {
       "id": 4,
       "company": "Parasur S.A.",
       "position": "Pasante — Soporte Técnico",
+      "position_en": "Intern — Technical Support",
       "duration": "2014",
-      "description": "Instalación de cableados estructurados, montaje y configuración de cámaras de seguridad, y mantenimiento preventivo y correctivo de equipos informáticos."
+      "duration_en": "2014",
+      "description": "Instalación de cableados estructurados, montaje y configuración de cámaras de seguridad, y mantenimiento preventivo y correctivo de equipos informáticos.",
+      "description_en": "Structured cabling installation, mounting and configuration of security cameras, and preventive and corrective maintenance of computer equipment."
     }
   ]
 }
