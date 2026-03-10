@@ -7,38 +7,29 @@ import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/compon
 import {skills} from '@/assets/json/skills.json';
 import {experience} from '@/assets/json/experience.json';
 import {projects} from '@/assets/json/projects.json';
+import {type Lang, t} from '@/i18n.ts';
 
 // Light  → bg:cream-white  · text:#0C2C55  · accent:#629FAD
 // Dark   → bg:deep-navy    · text:#EDEDCE  · accent:#629FAD
 
 const skillCategories = [
-  {
-    type: 'Frontend',
-    chipClass: 'bg-foreground/5 text-foreground border border-foreground/20 hover:bg-foreground/10',
-  },
+  {type: 'Frontend', chipClass: 'bg-foreground/5 text-foreground border border-foreground/20 hover:bg-foreground/10'},
   {
     type: 'Backend',
-    chipClass: 'bg-secondary/10 text-secondary dark:text-[#629FAD] border border-secondary/30 hover:bg-secondary/20',
+    chipClass: 'bg-secondary/10 text-secondary dark:text-[#629FAD] border border-secondary/30 hover:bg-secondary/20'
   },
-  {
-    type: 'Database',
-    chipClass: 'bg-accent/10 text-accent border border-accent/30 hover:bg-accent/20',
-  },
+  {type: 'Database', chipClass: 'bg-accent/10 text-accent border border-accent/30 hover:bg-accent/20'},
   {
     type: 'AI Tools',
-    chipClass: 'bg-muted text-muted-foreground border border-muted-foreground/30 hover:bg-accent/10 hover:text-accent hover:border-accent/30',
+    chipClass: 'bg-muted text-muted-foreground border border-muted-foreground/30 hover:bg-accent/10 hover:text-accent hover:border-accent/30'
   },
   {
     type: 'JetBrains',
-    chipClass: 'bg-foreground/[0.04] text-foreground border border-accent/20 hover:bg-accent/10 hover:border-accent/40',
+    chipClass: 'bg-foreground/[0.04] text-foreground border border-accent/20 hover:bg-accent/10 hover:border-accent/40'
   },
 ];
 
-function FadeIn({
-                  children,
-                  delay = 0,
-                  className = "",
-                }: {
+function FadeIn({children, delay = 0, className = ""}: {
   children: React.ReactNode;
   delay?: number;
   className?: string;
@@ -60,11 +51,15 @@ function FadeIn({
 
 export default function App() {
   const [dark, setDark] = useState(() =>
-    typeof window !== 'undefined'
-      ? window.matchMedia('(prefers-color-scheme: dark)').matches
-      : false
+    typeof window !== 'undefined' ? window.matchMedia('(prefers-color-scheme: dark)').matches : false
   );
+  const [lang, setLang] = useState<Lang>(() => {
+    if (typeof window === 'undefined') return 'es';
+    return navigator.language.toLowerCase().startsWith('es') ? 'es' : 'en';
+  });
   const [showTop, setShowTop] = useState(false);
+
+  const tr = t[lang];
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark);
@@ -76,25 +71,36 @@ export default function App() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const navIds = ['skills', 'experience', 'projects', 'contact'] as const;
+  const navLabels = [tr.nav.skills, tr.nav.experience, tr.nav.projects, tr.nav.contact];
+
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
 
       {/* ── Navigation ── */}
       <header
         className="fixed top-0 w-full z-50 px-6 lg:px-16 h-16 flex items-center bg-background/90 backdrop-blur-md border-b border-border">
-        <nav className="ml-auto flex items-center gap-6 sm:gap-8">
-          {(['Habilidades', 'Experiencia', 'Proyectos', 'Contacto'] as const).map((label, i) => {
-            const ids = ['skills', 'experience', 'projects', 'contact'];
-            return (
-              <a
-                key={label}
-                href={`#${ids[i]}`}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors tracking-wide font-medium hidden sm:block"
-              >
-                {label}
-              </a>
-            );
-          })}
+        <nav className="ml-auto flex items-center gap-5 sm:gap-7">
+          {navLabels.map((label, i) => (
+            <a
+              key={navIds[i]}
+              href={`#${navIds[i]}`}
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors tracking-wide font-medium hidden sm:block"
+            >
+              {label}
+            </a>
+          ))}
+
+          {/* Language toggle */}
+          <button
+            onClick={() => setLang(lang === 'es' ? 'en' : 'es')}
+            className="font-mono text-xs font-bold text-muted-foreground hover:text-foreground border border-border hover:border-accent/50 rounded-md px-2 py-1 transition-colors"
+            aria-label="Toggle language"
+          >
+            {lang === 'es' ? 'EN' : 'ES'}
+          </button>
+
+          {/* Theme toggle */}
           <button
             onClick={() => setDark(!dark)}
             className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
@@ -109,7 +115,6 @@ export default function App() {
 
         {/* ── Hero ── */}
         <section className="min-h-[calc(100vh-64px)] flex items-center relative overflow-hidden bg-background">
-          {/* Dot grid */}
           <div
             className="absolute inset-0 pointer-events-none opacity-30"
             style={{
@@ -118,7 +123,6 @@ export default function App() {
               maskImage: 'radial-gradient(ellipse 90% 80% at 15% 50%, #000 50%, transparent 100%)',
             }}
           />
-          {/* Soft glow */}
           <div
             className="absolute bottom-0 right-0 w-[600px] h-[400px] rounded-full bg-accent/5 blur-[100px] pointer-events-none"/>
 
@@ -129,7 +133,7 @@ export default function App() {
               transition={{duration: 0.8, ease: [0.25, 0.1, 0.25, 1]}}
             >
               <p className="font-mono text-xs text-accent uppercase tracking-[0.3em] mb-6">
-                Hola, soy
+                {tr.hero.greeting}
               </p>
               <h1
                 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7rem] font-bold tracking-tight leading-none mb-5">
@@ -140,26 +144,20 @@ export default function App() {
               <div className="flex items-center gap-3 mb-4">
                 <span className="h-px w-8 bg-accent"/>
                 <p className="text-sm text-accent font-medium tracking-widest uppercase">
-                  Desarrollador Full Stack
+                  {tr.hero.role}
                 </p>
               </div>
               <p className="text-muted-foreground max-w-md mb-10 leading-relaxed text-sm sm:text-base">
-                4 años construyendo aplicaciones web con React, Angular, Java y Go.
-                Apasionado por la arquitectura limpia y la experiencia de usuario.
+                {tr.hero.description}
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button
-                  asChild
-                  className="bg-foreground text-background hover:bg-foreground/90 border-0 font-semibold px-6"
-                >
-                  <a href="#contact">Contacto</a>
+                <Button asChild
+                        className="bg-foreground text-background hover:bg-foreground/90 border-0 font-semibold px-6">
+                  <a href="#contact">{tr.hero.cta}</a>
                 </Button>
-                <Button
-                  variant="outline"
-                  asChild
-                  className="border-border text-foreground hover:bg-muted font-medium px-6"
-                >
-                  <a href="#projects">Ver proyectos</a>
+                <Button variant="outline" asChild
+                        className="border-border text-foreground hover:bg-muted font-medium px-6">
+                  <a href="#projects">{tr.hero.ctaSecondary}</a>
                 </Button>
               </div>
             </motion.div>
@@ -170,12 +168,9 @@ export default function App() {
         <section id="skills" className="py-28 border-t border-border bg-muted/50">
           <div className="container px-6 md:px-16">
             <FadeIn>
-              <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-2">Stack</p>
-              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-16">
-                Habilidades
-              </h2>
+              <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-2">{tr.skills.label}</p>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-16">{tr.skills.title}</h2>
             </FadeIn>
-
             <div className="space-y-10">
               {skillCategories.map(({type, chipClass}) => {
                 const categorySkills = skills.filter((s) => s.type === type);
@@ -211,34 +206,29 @@ export default function App() {
         <section id="experience" className="py-28 border-t border-border bg-background">
           <div className="container px-6 md:px-16">
             <FadeIn>
-              <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-2">Carrera</p>
-              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-16">
-                Experiencia
-              </h2>
+              <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-2">{tr.experience.label}</p>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-16">{tr.experience.title}</h2>
             </FadeIn>
-
             <div className="relative">
-              {/* Timeline vertical line */}
               <div className="absolute left-[5px] top-2 bottom-2 w-px bg-accent/30 hidden md:block"/>
-
               {experience.map((exp, i) => (
                 <FadeIn key={exp.id} delay={i * 0.1}>
                   <div className="md:pl-12 relative pb-14 last:pb-0">
-                    {/* Timeline dot */}
                     <div
                       className="absolute left-0 top-[7px] w-[11px] h-[11px] rounded-full border-2 border-accent bg-background hidden md:block"/>
-
                     <div className="flex flex-col sm:flex-row sm:gap-12">
                       <div className="sm:w-44 shrink-0 mb-2 sm:mb-0">
                         <p className="font-mono text-xs text-accent/80 tracking-wide">
-                          {exp.duration}
+                          {lang === 'en' ? exp.duration_en : exp.duration}
                         </p>
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-foreground">{exp.company}</h3>
-                        <p className="text-sm text-secondary dark:text-accent font-medium mb-3">{exp.position}</p>
+                        <p className="text-sm text-secondary dark:text-accent font-medium mb-3">
+                          {lang === 'en' ? exp.position_en : exp.position}
+                        </p>
                         <p className="text-sm text-muted-foreground leading-relaxed max-w-xl">
-                          {exp.description}
+                          {lang === 'en' ? exp.description_en : exp.description}
                         </p>
                       </div>
                     </div>
@@ -253,44 +243,35 @@ export default function App() {
         <section id="projects" className="py-28 border-t border-border bg-muted/50">
           <div className="container px-6 md:px-16">
             <FadeIn>
-              <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-2">Trabajo</p>
-              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-16">
-                Proyectos
-              </h2>
+              <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-2">{tr.projects.label}</p>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-16">{tr.projects.title}</h2>
             </FadeIn>
-
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, i) => (
                 <FadeIn key={project.id} delay={(i % 6) * 0.05}>
                   <motion.div
                     whileHover={{y: -5}}
                     transition={{duration: 0.2}}
-                    className="group relative border border-border rounded-2xl flex flex-col h-full bg-card overflow-hidden hover:border-accent/50 hover:shadow-md transition-all duration-200"
+                    className="group relative border border-border rounded-2xl flex flex-col h-full bg-card overflow-hidden transition-all duration-300 hover:border-accent/40 hover:shadow-[0_0_0_1px_rgba(98,159,173,0.2),0_0_24px_rgba(98,159,173,0.1)]"
                   >
-                    {/* Accent top bar that grows on hover */}
-                    <div
-                      className="absolute top-0 left-0 right-0 h-[2px] bg-accent/0 group-hover:bg-accent/60 transition-all duration-300"/>
-
                     <div className="p-6 flex flex-col h-full">
-                      {/* Header row */}
                       <div className="flex items-start justify-between gap-2 mb-3">
-                        <h3 className="font-bold text-card-foreground leading-snug">{project.name}</h3>
+                        <h3 className="font-bold text-card-foreground leading-snug">
+                          {lang === 'en' && project.name_en ? project.name_en : project.name}
+                        </h3>
                         {project.url && (
                           <button
                             onClick={() => window.open(project.url, '_blank')}
                             className="shrink-0 p-1.5 rounded-lg text-muted-foreground/50 hover:text-accent hover:bg-accent/10 transition-colors"
-                            aria-label={`Abrir ${project.name}`}
+                            aria-label={`Open ${project.name}`}
                           >
                             <ArrowUpRight className="h-4 w-4"/>
                           </button>
                         )}
                       </div>
-
                       <p className="text-sm text-muted-foreground mb-6 flex-grow leading-relaxed">
-                        {project.description}
+                        {lang === 'en' && project.description_en ? project.description_en : project.description}
                       </p>
-
-                      {/* Divider */}
                       <div className="border-t border-border/60 pt-4">
                         <div className="flex flex-wrap gap-3">
                           {project.stack?.map((stack) => (
@@ -323,14 +304,9 @@ export default function App() {
         <section id="contact" className="py-28 border-t border-border bg-foreground">
           <div className="container px-6 md:px-16">
             <FadeIn className="max-w-xl">
-              <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-2">Contacto</p>
-              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-background mb-4">
-                Trabajemos juntos
-              </h2>
-              <p className="text-background/60 mb-10 leading-relaxed">
-                Estoy disponible para proyectos freelance y nuevas oportunidades laborales.
-                No dudes en escribirme.
-              </p>
+              <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-2">{tr.contact.label}</p>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-background mb-4">{tr.contact.title}</h2>
+              <p className="text-background/60 mb-10 leading-relaxed">{tr.contact.description}</p>
               <div className="flex flex-wrap gap-3">
                 <Button
                   className="gap-2 border-accent/50 text-accent bg-transparent hover:bg-accent/10 hover:border-accent font-medium"
@@ -356,8 +332,9 @@ export default function App() {
       </main>
 
       <footer className="bg-foreground border-t border-background/10 px-6 md:px-16 py-5 flex items-center">
-        <p className="text-xs text-background/30">© {new Date().getFullYear()} Martin Medina. Todos los derechos
-          reservados.</p>
+        <p className="text-xs text-background/30">
+          © {new Date().getFullYear()} Martin Medina. {tr.footer}
+        </p>
       </footer>
 
       {/* ── Back to top ── */}
@@ -370,7 +347,7 @@ export default function App() {
             transition={{duration: 0.2}}
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
             className="fixed bottom-6 right-6 z-50 p-3 rounded-xl bg-foreground text-background shadow-lg hover:bg-foreground/90 transition-colors"
-            aria-label="Volver arriba"
+            aria-label="Back to top"
           >
             <ArrowUp className="h-4 w-4"/>
           </motion.button>
