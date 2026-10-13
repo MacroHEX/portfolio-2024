@@ -1,300 +1,6 @@
 {
   "projects": [
     {
-      "id": 1,
-      "name": "Plataforma de Envío de Fondos",
-      "name_en": "Funds Transfer Platform",
-      "description": "Integración con plataforma externa para envío de dinero, con procesamiento de transacciones en tiempo real, conciliación automática y seguimiento de operaciones.",
-      "description_en": "Integration with an external money transfer platform, enabling real-time transaction processing, automatic reconciliation and operation tracking.",
-      "url": "",
-      "stack": [
-        {
-          "name": "React",
-          "img": "/img/react.svg"
-        },
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Sistema de Recibo de Fondos",
-      "name_en": "Funds Receipt System",
-      "description": "Integración con plataforma externa de recibo de dinero, habilitando el procesamiento y conciliación de transacciones entrantes en tiempo real.",
-      "description_en": "Integration with an external money receipt platform, enabling real-time processing and reconciliation of incoming transactions.",
-      "url": "",
-      "stack": [
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Bot Telegram — Monitoreo y Operaciones",
-      "name_en": "Telegram Bot — Monitoring & Ops",
-      "description": "Bot de Telegram para el equipo de operaciones con alertas automáticas del sistema, control de modo mantenimiento de aplicaciones, bloqueo de accesos y actualización de listas de cumplimiento.",
-      "description_en": "Telegram bot for the operations team with automatic system alerts, application maintenance mode control, access blocking and compliance list updates.",
-      "url": "",
-      "stack": [
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "Telegram",
-          "img": "/img/telegram.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Bot Telegram — Autogestión de Cajeros",
-      "name_en": "Telegram Bot — Cashier Self-Service",
-      "description": "Bot de Telegram para cajeros que permite el reseteo autónomo de contraseñas y el envío de comentarios e incidencias directamente al equipo de soporte.",
-      "description_en": "Telegram bot for cashiers enabling autonomous password resets and direct submission of comments and incidents to the support team.",
-      "url": "",
-      "stack": [
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "Telegram",
-          "img": "/img/telegram.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Documentación Interna",
-      "name_en": "Internal Documentation",
-      "description": "Plataforma de documentación interna para la empresa con autenticación de usuarios, búsqueda de contenido y gestión de artículos técnicos.",
-      "description_en": "Internal documentation platform for the company with user authentication, content search and technical article management.",
-      "url": "",
-      "stack": [
-        {
-          "name": "Next.js",
-          "img": "/img/next.svg"
-        },
-        {
-          "name": "TypeScript",
-          "img": "/img/typescript.svg"
-        },
-        {
-          "name": "Prisma",
-          "img": "/img/prisma.svg"
-        },
-        {
-          "name": "PostgreSQL",
-          "img": "/img/postgresql.svg"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Servidor de Video Interno",
-      "name_en": "Internal Video Server",
-      "description": "Plataforma interna tipo YouTube para distribución de videos publicitarios y contenido corporativo, con reproductor web y gestión de subida de archivos.",
-      "description_en": "YouTube-like internal platform for distributing advertising videos and corporate content, featuring a web player and file upload management.",
-      "url": "",
-      "stack": [
-        {
-          "name": "PHP",
-          "img": "/img/php.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Sistema de Tickets",
-      "name_en": "Ticket System",
-      "description": "Sistema interno de tickets para gestión de solicitudes entre departamentos, con seguimiento de estado y prioridades.",
-      "description_en": "Internal ticket system for managing interdepartmental requests, with status tracking and priority management.",
-      "url": "",
-      "stack": [
-        {
-          "name": "React",
-          "img": "/img/react.svg"
-        },
-        {
-          "name": "Tailwind CSS",
-          "img": "/img/tailwind.svg"
-        },
-        {
-          "name": "TypeScript",
-          "img": "/img/typescript.svg"
-        },
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Facturación Electrónica",
-      "name_en": "Electronic Invoicing",
-      "description": "Integración con SIFEN para la emisión de comprobantes electrónicos conforme a las normativas de la SET Paraguay.",
-      "description_en": "Integration with SIFEN for issuing electronic receipts in compliance with Paraguay's SET tax authority regulations.",
-      "url": "",
-      "stack": [
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Bot de WhatsApp",
-      "name_en": "WhatsApp Bot",
-      "description": "Bot de atención al usuario utilizando la API de META para responder consultas frecuentes y derivar casos al equipo humano.",
-      "description_en": "Customer service bot using the META API to answer frequently asked questions and escalate cases to the human support team.",
-      "url": "",
-      "stack": [
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        },
-        {
-          "name": "Meta API",
-          "img": "/img/meta.svg"
-        },
-        {
-          "name": "WhatsApp",
-          "img": "/img/whatsapp.svg"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Mantenimiento Sistemas Legacy",
-      "name_en": "Legacy Systems Maintenance",
-      "description": "Mantenimiento y evolución de sistemas legacy con Java 8 y JSP, así como un módulo en PHP. Mejora de estabilidad, corrección de bugs y desarrollo de nuevas funcionalidades.",
-      "description_en": "Maintenance and evolution of legacy systems using Java 8 and JSP, along with a PHP module. Stability improvements, bug fixes and new feature development.",
-      "url": "",
-      "stack": [
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "HTML",
-          "img": "/img/html.svg"
-        },
-        {
-          "name": "CSS",
-          "img": "/img/css.svg"
-        },
-        {
-          "name": "Bootstrap",
-          "img": "/img/bootstrap.svg"
-        },
-        {
-          "name": "JQuery",
-          "img": "/img/jquery.svg"
-        },
-        {
-          "name": "MySQL",
-          "img": "/img/mysql.svg"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Dashboard — Empresa de Seguros",
-      "name_en": "Dashboard — Insurance Company",
-      "description": "Migración de sistema de escritorio a web para empresa de seguros y reaseguro, con gestión de pólizas, clientes y reportes.",
-      "description_en": "Desktop-to-web migration for an insurance and reinsurance company, with policy management, client data and reports.",
-      "url": "",
-      "stack": [
-        {
-          "name": "Angular",
-          "img": "/img/angular.svg"
-        },
-        {
-          "name": "Material UI",
-          "img": "/img/material.svg"
-        },
-        {
-          "name": "TypeScript",
-          "img": "/img/typescript.svg"
-        },
-        {
-          "name": "Java",
-          "img": "/img/java.svg"
-        },
-        {
-          "name": "Spring Boot",
-          "img": "/img/spring.svg"
-        }
-      ]
-    },
-    {
       "id": 12,
       "name": "Delpi",
       "name_en": "Delpi",
@@ -401,6 +107,188 @@
           "img": "/img/css.svg"
         }
       ]
+    },
+    {
+      "id": 16,
+      "name": "Pagos y remesas",
+      "name_en": "Payments & Remittances",
+      "description": "Integraciones con plataformas externas de transferencia de dinero y con la SET, con procesamiento en tiempo real y conciliación automática.",
+      "description_en": "Integrations with external money transfer platforms and Paraguay’s tax authority, with real-time processing and automatic reconciliation.",
+      "url": "",
+      "internal": true,
+      "items": [
+        {
+          "es": "Envío de fondos con seguimiento de operaciones",
+          "en": "Outgoing transfers with operation tracking"
+        },
+        {
+          "es": "Recibo de fondos y conciliación de transacciones entrantes",
+          "en": "Incoming transfers and transaction reconciliation"
+        },
+        {
+          "es": "Facturación electrónica con SIFEN",
+          "en": "Electronic invoicing with SIFEN"
+        }
+      ],
+      "stack": [
+        {
+          "name": "React",
+          "img": "/img/react.svg"
+        },
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Bots y automatización",
+      "name_en": "Bots & Automation",
+      "description": "Bots para operaciones, cajeros y atención al cliente que reducen trabajo manual y tiempos de respuesta.",
+      "description_en": "Bots for operations, cashiers and customer service that cut manual work and response times.",
+      "url": "",
+      "internal": true,
+      "items": [
+        {
+          "es": "Telegram: alertas del sistema, modo mantenimiento y bloqueo de accesos",
+          "en": "Telegram: system alerts, maintenance mode and access blocking"
+        },
+        {
+          "es": "Telegram: reseteo de contraseñas y reporte de incidencias para cajeros",
+          "en": "Telegram: password resets and incident reporting for cashiers"
+        },
+        {
+          "es": "WhatsApp (API de Meta): preguntas frecuentes y derivación a soporte",
+          "en": "WhatsApp (Meta API): FAQs and escalation to support"
+        }
+      ],
+      "stack": [
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "/img/mysql.svg"
+        },
+        {
+          "name": "Telegram",
+          "img": "/img/telegram.svg"
+        },
+        {
+          "name": "WhatsApp",
+          "img": "/img/whatsapp.svg"
+        },
+        {
+          "name": "Meta API",
+          "img": "/img/meta.svg"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Herramientas internas",
+      "name_en": "Internal Tools",
+      "description": "Plataformas para el día a día de la empresa y evolución de los sistemas existentes.",
+      "description_en": "Platforms for the company’s day-to-day work and evolution of existing systems.",
+      "url": "",
+      "internal": true,
+      "items": [
+        {
+          "es": "Documentación interna con autenticación y búsqueda",
+          "en": "Internal documentation with authentication and search"
+        },
+        {
+          "es": "Sistema de tickets entre departamentos",
+          "en": "Interdepartmental ticket system"
+        },
+        {
+          "es": "Servidor de video interno para contenido corporativo",
+          "en": "Internal video server for corporate content"
+        },
+        {
+          "es": "Mantenimiento de sistemas legacy en Java 8, JSP y PHP",
+          "en": "Maintenance of legacy systems in Java 8, JSP and PHP"
+        }
+      ],
+      "stack": [
+        {
+          "name": "React",
+          "img": "/img/react.svg"
+        },
+        {
+          "name": "Next.js",
+          "img": "/img/next.svg"
+        },
+        {
+          "name": "TypeScript",
+          "img": "/img/typescript.svg"
+        },
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        },
+        {
+          "name": "PHP",
+          "img": "/img/php.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "img": "/img/postgresql.svg"
+        },
+        {
+          "name": "MySQL",
+          "img": "/img/mysql.svg"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Dashboard — Empresa de Seguros",
+      "name_en": "Dashboard — Insurance Company",
+      "description": "Migración de sistema de escritorio a web para empresa de seguros y reaseguro, con gestión de pólizas, clientes y reportes.",
+      "description_en": "Desktop-to-web migration for an insurance and reinsurance company, with policy management, client data and reports.",
+      "url": "",
+      "stack": [
+        {
+          "name": "Angular",
+          "img": "/img/angular.svg"
+        },
+        {
+          "name": "Material UI",
+          "img": "/img/material.svg"
+        },
+        {
+          "name": "TypeScript",
+          "img": "/img/typescript.svg"
+        },
+        {
+          "name": "Java",
+          "img": "/img/java.svg"
+        },
+        {
+          "name": "Spring Boot",
+          "img": "/img/spring.svg"
+        }
+      ],
+      "internal": true
     }
   ]
 }

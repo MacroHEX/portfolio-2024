@@ -10,9 +10,9 @@ export const t = {
     },
     hero: {
       greeting: 'Hola, soy',
-      role: 'Desarrollador Full Stack',
+      role: 'Desarrollador Full Stack & Mobile',
       description:
-        '4 años construyendo aplicaciones web con React, Angular, Java y Go. Apasionado por la arquitectura limpia y la experiencia de usuario.',
+        'Más de 4 años construyendo aplicaciones web y móviles con React, Flutter, Java y Go. Creador de OdontoCare, un SaaS para consultorios odontológicos. Apasionado por la arquitectura limpia y la experiencia de usuario.',
       cta: 'Contacto',
       ctaSecondary: 'Ver proyectos',
     },
@@ -28,6 +28,10 @@ export const t = {
       label: 'Trabajo',
       title: 'Proyectos',
       visitSite: 'Ver sitio',
+      featured: 'Proyecto destacado',
+      architecture: 'Arquitectura',
+      others: 'Otros proyectos',
+      internal: 'Interno',
     },
     contact: {
       label: 'Contacto',
@@ -46,9 +50,9 @@ export const t = {
     },
     hero: {
       greeting: "Hi, I'm",
-      role: 'Full Stack Developer',
+      role: 'Full Stack & Mobile Developer',
       description:
-        '4 years building web applications with React, Angular, Java and Go. Passionate about clean architecture and user experience.',
+        '4+ years building web and mobile applications with React, Flutter, Java and Go. Creator of OdontoCare, a SaaS for dental clinics. Passionate about clean architecture and user experience.',
       cta: 'Contact me',
       ctaSecondary: 'View projects',
     },
@@ -64,6 +68,10 @@ export const t = {
       label: 'Work',
       title: 'Projects',
       visitSite: 'Visit site',
+      featured: 'Featured project',
+      architecture: 'Architecture',
+      others: 'Other projects',
+      internal: 'Internal',
     },
     contact: {
       label: 'Contact',

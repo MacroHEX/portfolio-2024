@@ -1,0 +1,76 @@
+{
+  "featured": {
+    "name": "OdontoCare",
+    "logo": "/img/odontocare/logo.png",
+    "tagline": "Software de gestión para consultorios odontológicos",
+    "tagline_en": "Practice management software for dental clinics",
+    "description": "SaaS que diseñé y desarrollé de punta a punta: una app para celular y tablet con la que el odontólogo maneja agenda, fichas, odontograma, presupuestos y finanzas, una landing con registro y portal de suscripciones, y un panel interno de administración.",
+    "description_en": "A SaaS I designed and built end to end: a phone and tablet app where dentists manage their schedule, patient records, odontogram, treatment plans and finances, a landing page with sign-up and a subscription portal, and an internal admin panel.",
+    "url": "https://www.odontocare.com.py",
+    "status": "Play Store y App Store: próximamente",
+    "status_en": "Play Store & App Store: coming soon",
+    "highlights": [
+      {
+        "title": "Funciona sin internet",
+        "title_en": "Works offline",
+        "description": "Base local con Drift y sincronización automática con Supabase cuando vuelve la conexión.",
+        "description_en": "Local Drift database with automatic Supabase sync when the connection comes back."
+      },
+      {
+        "title": "Odontograma y plan de tratamiento",
+        "title_en": "Odontogram & treatment plans",
+        "description": "Registro pieza por pieza con historial por visita y presupuestos en guaraníes.",
+        "description_en": "Tooth-by-tooth charting with per-visit history and quotes in guaraníes."
+      },
+      {
+        "title": "Consultorios con equipo",
+        "title_en": "Multi-user clinics",
+        "description": "Miembros, invitaciones y roles, con finanzas por profesional.",
+        "description_en": "Members, invitations and roles, with per-practitioner finances."
+      },
+      {
+        "title": "Seguridad en Postgres",
+        "title_en": "Security in Postgres",
+        "description": "RLS y funciones en la base; panel de administración con MFA y registro de auditoría, sin acceso a datos clínicos.",
+        "description_en": "RLS and database functions; admin panel with MFA and an audit log, with no access to clinical data."
+      }
+    ],
+    "parts": [
+      {
+        "name": "App móvil y tablet",
+        "name_en": "Mobile & tablet app",
+        "stack": "Flutter · Riverpod · Drift · Firebase Messaging"
+      },
+      {
+        "name": "Landing y portal del cliente",
+        "name_en": "Landing & customer portal",
+        "stack": "React 19 · TanStack Router · Tailwind CSS"
+      },
+      {
+        "name": "Panel de administración",
+        "name_en": "Admin panel",
+        "stack": "React 19 · TanStack Query · MFA"
+      },
+      {
+        "name": "Backend",
+        "name_en": "Backend",
+        "stack": "Supabase · PostgreSQL · Edge Functions"
+      }
+    ],
+    "screenshots": [
+      {"light": "/img/odontocare/phone-home-light.webp", "dark": "/img/odontocare/phone-home-dark.webp", "alt": "Inicio", "alt_en": "Home"},
+      {"light": "/img/odontocare/phone-odontogram-light.webp", "dark": "/img/odontocare/phone-odontogram-dark.webp", "alt": "Odontograma", "alt_en": "Odontogram"},
+      {"light": "/img/odontocare/phone-plan-light.webp", "dark": "/img/odontocare/phone-plan-dark.webp", "alt": "Plan de tratamiento", "alt_en": "Treatment plan"}
+    ],
+    "stack": [
+      {"name": "Flutter", "img": "/img/flutter.svg"},
+      {"name": "Dart", "img": "/img/dart.svg"},
+      {"name": "Supabase", "img": "/img/supabase.svg"},
+      {"name": "PostgreSQL", "img": "/img/postgresql.svg"},
+      {"name": "Firebase", "img": "/img/firebase.svg"},
+      {"name": "React", "img": "/img/react.svg"},
+      {"name": "TypeScript", "img": "/img/typescript.svg"},
+      {"name": "Tailwind CSS", "img": "/img/tailwind.svg"}
+    ]
+  }
+}

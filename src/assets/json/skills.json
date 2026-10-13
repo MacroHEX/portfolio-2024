@@ -26,6 +26,21 @@
       "type": "Frontend"
     },
     {
+      "id": 22,
+      "name": "Flutter",
+      "type": "Mobile"
+    },
+    {
+      "id": 23,
+      "name": "Dart",
+      "type": "Mobile"
+    },
+    {
+      "id": 24,
+      "name": "Riverpod",
+      "type": "Mobile"
+    },
+    {
       "id": 6,
       "name": "Java",
       "type": "Backend"
@@ -43,6 +58,16 @@
     {
       "id": 8,
       "name": "Spring Boot",
+      "type": "Backend"
+    },
+    {
+      "id": 25,
+      "name": "Supabase",
+      "type": "Backend"
+    },
+    {
+      "id": 26,
+      "name": "Firebase",
       "type": "Backend"
     },
     {
@@ -72,38 +97,8 @@
     },
     {
       "id": 14,
-      "name": "IntelliJ IDEA",
-      "type": "JetBrains"
-    },
-    {
-      "id": 15,
-      "name": "WebStorm",
-      "type": "JetBrains"
-    },
-    {
-      "id": 16,
-      "name": "DataGrip",
-      "type": "JetBrains"
-    },
-    {
-      "id": 17,
-      "name": "PhpStorm",
-      "type": "JetBrains"
-    },
-    {
-      "id": 18,
-      "name": "Rider",
-      "type": "JetBrains"
-    },
-    {
-      "id": 19,
-      "name": "GoLand",
-      "type": "JetBrains"
-    },
-    {
-      "id": 20,
-      "name": "PyCharm",
-      "type": "JetBrains"
+      "name": "JetBrains IDEs",
+      "type": "Tools"
     }
   ]
 }

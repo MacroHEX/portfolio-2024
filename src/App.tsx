@@ -1,18 +1,23 @@
 import {useEffect, useRef, useState} from "react";
 import {AnimatePresence, motion, useInView} from "framer-motion";
 import {Button} from "@/components/ui/button.tsx";
-import {ArrowUp, ArrowUpRight, Github, Linkedin, Moon, Sun} from "lucide-react";
+import {ArrowUp, ArrowUpRight, Github, Linkedin, Mail, Moon, Sun} from "lucide-react";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip.tsx";
 
 import {skills} from '@/assets/json/skills.json';
 import {experience} from '@/assets/json/experience.json';
 import {projects} from '@/assets/json/projects.json';
+import {featured} from '@/assets/json/featured.json';
 import {type Lang, t} from '@/i18n.ts';
 
 // Light  → bg:cream-white  · text:#0C2C55  · accent:#629FAD
 // Dark   → bg:deep-navy    · text:#EDEDCE  · accent:#629FAD
 
 const skillCategories = [
+  {
+    type: 'Mobile',
+    chipClass: 'bg-accent/10 text-foreground border border-accent/40 hover:bg-accent/20'
+  },
   {type: 'Frontend', chipClass: 'bg-foreground/5 text-foreground border border-foreground/20 hover:bg-foreground/10'},
   {
     type: 'Backend',
@@ -24,7 +29,7 @@ const skillCategories = [
     chipClass: 'bg-muted text-muted-foreground border border-muted-foreground/30 hover:bg-accent/10 hover:text-accent hover:border-accent/30'
   },
   {
-    type: 'JetBrains',
+    type: 'Tools',
     chipClass: 'bg-foreground/[0.04] text-foreground border border-accent/20 hover:bg-accent/10 hover:border-accent/40'
   },
 ];
@@ -64,6 +69,10 @@ export default function App() {
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark);
   }, [dark]);
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   useEffect(() => {
     const onScroll = () => setShowTop(window.scrollY > 400);
@@ -246,6 +255,112 @@ export default function App() {
               <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-2">{tr.projects.label}</p>
               <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-16">{tr.projects.title}</h2>
             </FadeIn>
+
+            {/* Featured project */}
+            <FadeIn>
+              <article
+                className="relative border border-accent/30 rounded-3xl bg-card overflow-hidden mb-20 shadow-[0_0_0_1px_rgba(98,159,173,0.1),0_0_48px_rgba(98,159,173,0.08)]">
+                <div
+                  className="absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full bg-accent/10 blur-[90px] pointer-events-none"/>
+                <div className="relative grid gap-12 lg:grid-cols-[1.15fr_1fr] p-6 sm:p-10 lg:p-12">
+                  <div className="flex flex-col">
+                    <p className="font-mono text-xs text-accent uppercase tracking-[0.25em] mb-5">
+                      {tr.projects.featured}
+                    </p>
+                    <div className="flex items-center gap-4 mb-5">
+                      <img src={featured.logo} alt="" className="h-14 w-14 rounded-2xl shadow-sm"/>
+                      <div>
+                        <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-card-foreground">
+                          {featured.name}
+                        </h3>
+                        <p className="text-sm text-secondary dark:text-accent font-medium">
+                          {lang === 'en' ? featured.tagline_en : featured.tagline}
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-8">
+                      {lang === 'en' ? featured.description_en : featured.description}
+                    </p>
+
+                    <div className="grid gap-5 sm:grid-cols-2 mb-8">
+                      {featured.highlights.map((h) => (
+                        <div key={h.title} className="border-l-2 border-accent/50 pl-4">
+                          <p className="text-sm font-semibold text-card-foreground mb-1">
+                            {lang === 'en' ? h.title_en : h.title}
+                          </p>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {lang === 'en' ? h.description_en : h.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+
+                    <p className="font-mono text-xs text-accent/70 uppercase tracking-[0.2em] mb-3">
+                      {tr.projects.architecture}
+                    </p>
+                    <dl className="divide-y divide-border/60 border-y border-border/60 mb-8">
+                      {featured.parts.map((part) => (
+                        <div key={part.name} className="flex flex-col sm:flex-row sm:justify-between gap-1 py-2.5">
+                          <dt className="text-sm font-medium text-card-foreground">
+                            {lang === 'en' ? part.name_en : part.name}
+                          </dt>
+                          <dd className="font-mono text-xs text-muted-foreground sm:text-right sm:pt-0.5">
+                            {part.stack}
+                          </dd>
+                        </div>
+                      ))}
+                    </dl>
+
+                    <div className="flex flex-wrap gap-3 mb-8">
+                      {featured.stack.map((stack) => (
+                        <TooltipProvider key={stack.name}>
+                          <Tooltip>
+                            <TooltipTrigger>
+                              <img className="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity"
+                                   src={stack.img} alt={stack.name}/>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-foreground text-background border-border">
+                              <p>{stack.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      ))}
+                    </div>
+
+                    <div className="mt-auto flex flex-wrap items-center gap-4">
+                      <Button asChild
+                              className="gap-2 bg-foreground text-background hover:bg-foreground/90 border-0 font-semibold px-6">
+                        <a href={featured.url} target="_blank" rel="noopener noreferrer">
+                          {tr.projects.visitSite}
+                          <ArrowUpRight className="h-4 w-4"/>
+                        </a>
+                      </Button>
+                      <span className="font-mono text-xs text-muted-foreground">
+                        {lang === 'en' ? featured.status_en : featured.status}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-center gap-3 sm:gap-5">
+                    {featured.screenshots.map((shot, i) => (
+                      <motion.img
+                        key={shot.light}
+                        src={dark ? shot.dark : shot.light}
+                        alt={lang === 'en' ? shot.alt_en : shot.alt}
+                        loading="lazy"
+                        whileHover={{y: -6}}
+                        transition={{duration: 0.2}}
+                        className={`w-[30%] max-w-[190px] aspect-[600/1339] rounded-[1.25rem] sm:rounded-[1.75rem] border-[3px] sm:border-4 border-foreground/90 shadow-xl bg-background object-cover ${i === 1 ? 'lg:-translate-y-8' : 'lg:translate-y-4'}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </article>
+            </FadeIn>
+
+            <FadeIn>
+              <p className="font-mono text-xs text-accent/70 uppercase tracking-[0.2em] mb-6">{tr.projects.others}</p>
+            </FadeIn>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, i) => (
                 <FadeIn key={project.id} delay={(i % 6) * 0.05}>
@@ -259,6 +374,12 @@ export default function App() {
                         <h3 className="font-bold text-card-foreground leading-snug">
                           {lang === 'en' && project.name_en ? project.name_en : project.name}
                         </h3>
+                        {project.internal && (
+                          <span
+                            className="shrink-0 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground border border-border rounded-full px-2 py-0.5 mt-0.5">
+                            {tr.projects.internal}
+                          </span>
+                        )}
                         {project.url && (
                           <button
                             onClick={() => window.open(project.url, '_blank')}
@@ -269,9 +390,20 @@ export default function App() {
                           </button>
                         )}
                       </div>
-                      <p className="text-sm text-muted-foreground mb-6 flex-grow leading-relaxed">
+                      <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
                         {lang === 'en' && project.description_en ? project.description_en : project.description}
                       </p>
+                      {project.items && (
+                        <ul className="space-y-2 mb-6">
+                          {project.items.map((item) => (
+                            <li key={item.es} className="flex gap-2.5 text-sm text-card-foreground/80 leading-snug">
+                              <span className="mt-[7px] h-1 w-1 rounded-full bg-accent shrink-0"/>
+                              {lang === 'en' ? item.en : item.es}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      <div className="flex-grow"/>
                       <div className="border-t border-border/60 pt-4">
                         <div className="flex flex-wrap gap-3">
                           {project.stack?.map((stack) => (
@@ -308,6 +440,15 @@ export default function App() {
               <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-background mb-4">{tr.contact.title}</h2>
               <p className="text-background/60 mb-10 leading-relaxed">{tr.contact.description}</p>
               <div className="flex flex-wrap gap-3">
+                <Button
+                  asChild
+                  className="gap-2 bg-accent text-foreground dark:text-background hover:bg-accent/90 border-0 font-semibold"
+                >
+                  <a href="mailto:memedina.py@gmail.com">
+                    <Mail className="h-4 w-4"/>
+                    memedina.py@gmail.com
+                  </a>
+                </Button>
                 <Button
                   className="gap-2 border-accent/50 text-accent bg-transparent hover:bg-accent/10 hover:border-accent font-medium"
                   variant="outline"

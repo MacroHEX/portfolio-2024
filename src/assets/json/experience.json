@@ -1,6 +1,16 @@
 {
   "experience": [
     {
+      "id": 5,
+      "company": "OdontoCare",
+      "position": "Fundador y Desarrollador",
+      "position_en": "Founder & Developer",
+      "duration": "2025 - Presente",
+      "duration_en": "2025 - Present",
+      "description": "Diseño y desarrollo de punta a punta de un SaaS para consultorios odontológicos: app móvil y tablet en Flutter con modo sin conexión, landing con portal de suscripciones y panel de administración interno, sobre Supabase.",
+      "description_en": "End-to-end design and development of a SaaS for dental clinics: a Flutter mobile and tablet app with offline mode, a landing page with a subscription portal and an internal admin panel, built on Supabase."
+    },
+    {
       "id": 1,
       "company": "Maxicambios S.A.",
       "position": "Fullstack Developer",
